@@ -406,6 +406,14 @@ h2.eheading {
 	margin-bottom: 14px;
 }
 
+.footer .ful {
+	margin-bottom: 21px;
+}
+
+.footer .cc {
+	text-align: right;
+}
+
 .footer h3 a {
 	margin: 0;
 	padding: 0;
@@ -433,13 +441,7 @@ h2.eheading {
 	font-weight: 700;
 }
 
-.footer .ful {
-	margin-bottom: 21px;
-}
 
-.footer .cc {
-	text-align: right;
-}
 
 .footer li a:hover,
 .footer li a:active,
