@@ -97,8 +97,12 @@ li { line-height: 21px; margin-bottom: 14px; }
 
 body {
 	font-family: 'Lato', sans-serif;
+	background: #f4f4f4;
 }
 
+strong {
+	font-weight: 700;
+}
 
 /* ** =header ** */
 
@@ -312,8 +316,17 @@ header nav a.apply:hover {
 }
 
 /* ** main page **/
+
+body.imprint {
+	height: 100%;
+}
+
 #content {
 	background: #f4f4f4;
+}
+
+.singlepage {
+	padding-bottom: 12%;
 }
 
 .esection {
@@ -431,21 +444,19 @@ h2.eheading {
 	margin-right: 28px;
 }
 
-.footer li a {
+.footer li a,
+.footer .linked a {
 	color: #999;
 	font-weight: 700;
 	text-decoration: none;
 }
 
-.footer li a {
-	font-weight: 700;
-}
-
-
-
 .footer li a:hover,
 .footer li a:active,
-.footer li a:selected {
+.footer li a:selected,
+.footer .linked a:hover,
+.footer .linked a:active,
+.footer .linked a:selected {
 	color: #fff;
 }
 
@@ -453,6 +464,10 @@ h2.eheading {
 .eml:hover {
 	color: #fff;
 	text-decoration: none;
+}
+
+.footer .separator {
+	color: #999;
 }
 
 .twitterc {
