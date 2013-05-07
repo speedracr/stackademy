@@ -318,7 +318,7 @@ header nav a.apply:hover {
 /* ** main page **/
 
 body.imprint {
-	height: 100%;
+	position: relative;
 }
 
 #content {
@@ -468,6 +468,12 @@ h2.eheading {
 
 .footer .separator {
 	color: #999;
+}
+
+#push,
+#footer {
+	display: block;
+	height: 171px;
 }
 
 .twitterc {
