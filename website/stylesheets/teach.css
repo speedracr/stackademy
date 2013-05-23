@@ -139,6 +139,21 @@ figcaption.title {
 	left: 14px;
 }
 
+figcaption.credit {
+	font-size: 0.7em;
+	color: #fff;
+
+	position: relative;
+	bottom: 23px;
+	left: 7px;
+}
+
+figcaption.credit a {
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+}
+
 /* ** list buttons ** */
 #selectbuttons li {
 	display: inline;
@@ -230,6 +245,27 @@ figcaption.title {
 .desc p {
 	line-height: 1.5em;
 }
+
+.desc a {
+	color: #006699;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 2px;
+}
+
+.desc a:hover,
+.desc a:active,
+.desc a:focus {
+	background: #006699;
+	color: #fff;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;
+	
+}
+
 
 .ihighlight {
 	background: rgb(1,189,5);
@@ -323,6 +359,12 @@ li.partnerc {
 	
 	margin-bottom: 7px;
 	
+}
+
+.partnerimg a:hover,
+.partnerimg a:active,
+.partnerimg a:focus {
+	background: none;
 }
 
 p.label {
