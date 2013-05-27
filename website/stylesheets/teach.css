@@ -327,7 +327,8 @@ ul.nested li:last-child {
 	margin-right: 42px;
 }
 
-#paymill {
+#paymill,
+#mandrill {
 	margin-left: 42px;
 }
 
