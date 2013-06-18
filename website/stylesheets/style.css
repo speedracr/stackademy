@@ -402,6 +402,22 @@ h2.eheading {
 }
 
 
+.prvcy {
+	margin-left: 1.4em;
+}
+
+
+/* ** =privacy ** */
+
+.privacy h3 {
+	font-weight: 700;
+}
+
+.privacy .esection {
+	text-align: justify;
+}
+
+
 /* ** =footer ** */
 
 .footer {
