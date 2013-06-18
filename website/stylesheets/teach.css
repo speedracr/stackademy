@@ -100,8 +100,12 @@ body {
 	background: #f4f4f4;
 }
 
-strong {
+.strong {
 	font-weight: 700;
+}
+
+.italic {
+	font-style: italic;
 }
 
 /* ** =header ** */
@@ -152,6 +156,17 @@ figcaption.credit a {
 	font-weight: 700;
 	color: #fff;
 	text-decoration: none;
+}
+
+.update {
+	padding: 2px 4px;
+	background: #3B8FCD;
+	color: #fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;
+	
 }
 
 /* ** list buttons ** */
@@ -380,10 +395,6 @@ p.label {
 	border-radius: 4px;
 	
 }
-
-
-
-
 
 /* ** =footer ** */
 
