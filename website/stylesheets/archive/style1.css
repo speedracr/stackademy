@@ -24,22 +24,6 @@
 */
 
 
-/*
-* Web Symbols font by Just Be Nice Studio 
-* http://justbenicestudio.com/studio/websymbols/
-* Licensed under the SIL Open Font License, Version 1.1.
-* This license is available with a FAQ at http://scripts.sil.org/OFL
-*/
-
-
-/*
-* Permanent Marker font by Font Diner 
-* https://profiles.google.com/fontdiner/about
-* Licensed under the Apache License, Version 2.0
-* This license is available at http://www.apache.org/licenses/LICENSE-2.0.html
-*/
-
-
 /* Table of Content
 ==================================================
 	#Typography
@@ -58,7 +42,7 @@ h3 { line-height: 35px; margin-bottom: 7px; }
 h4 { line-height: 28px; margin-bottom: 7px; }
 h5 { line-height: 21px;  }
 
-p { margin: 0 0 14px 0; }
+p { margin: 0 0 21px 0; }
 p.lead { line-height: 28px; }
 
 blockquote, blockquote p { line-height: 21px; }
@@ -92,22 +76,12 @@ li { line-height: 21px; margin-bottom: 14px; }
 
 
 @font-face {
-	font-family: 'EntypoW';
+	font-family: 'Entypo';
 	src: 	url("../fonts/entypo/entypo.eot");
 	src: 	url("../fonts/entypo/entypo.eot?#iefix") format('embedded-opentype'),	
 			url("../fonts/entypo/entypo.woff") format('woff'),
 			url("../fonts/entypo/entypo.ttf") format('truetype'),
-			url("../fonts/entypo/entypo.svg#EntypoW") format('svg');						
-}
-
-
-@font-face {
-	font-family: 'Permanent Marker';
-	src: 	url("../fonts/permanentmarker/PermanentMarker-webfont.eot");
-	src: 	url("../fonts/permanentmarker/PermanentMarker-webfont.eot?#iefix") format('embedded-opentype'),	
-			url("../fonts/permanentmarker/PermanentMarker-webfont.woff") format('woff'),
-			url("../fonts/permanentmarker/PermanentMarker-webfont.ttf") format('truetype'),
-			url("../fonts/permanentmarker/PermanentMarker-webfont.svg#PermanentMarker") format('svg');						
+			url("../fonts/entypo/entypo.svg#WebSymbolsRegular") format('svg');						
 }
 
 
@@ -123,61 +97,22 @@ li { line-height: 21px; margin-bottom: 14px; }
 
 body {
 	font-family: 'Lato', sans-serif;
-	background: #fff;
-	text-rendering:	optimizeLegibility;
-	-webkit-font-smoothing:	antialiased;
-	font-smoothing:	antialiased;
-}
-
-::selection {
-  background: #ff8c00;
-}
-
-::-moz-selection {
-  background: #ff8c00;
-}
-
-::-webkit-selection {
-  background: #ff8c00;
+	background: #f4f4f4;
 }
 
 .strong {
 	font-weight: 700;
 }
 
-.xstrong {
-	font-weight: 900;
-}
-
-.centered {
-	text-align: center;
-}
-
-.alignright {
-	text-align: right;
-}
-
-.websymbols {
-	font-family: 'WebSymbolsRegular';
-}
-
-.entypo {
-	font-family: 'EntypoW';
-}
-
-.pmarker {
-	font-family: 'Permanent Marker', cursive;
-}
-
-
 /* ** =header ** */
 
-.sticky {
+/* .sticky {
 	position: fixed;
 	top: 0;
 	z-index: 1000;
 	width: 100%;
 }
+*/
 
 .header {
 	position: relative;
@@ -270,21 +205,20 @@ header nav a.apply:hover {
 /* ** =hero section ** */
 
 .hero {
-	margin-top: 2em;
 	background: url(../img/background_.jpg) no-repeat;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	min-height: 580px;
+	min-height: 500px;
 	z-index: -1;
 	
 	border-bottom: 1px solid #141414;
 }
 
-.maintext {
-	margin: 6em 0 1em 0;
+.hero .maintext {
+	margin: 28px 0;
 	padding: 28px;
 	background: rgba(0,0,0,0.6);
 	-webkit-border-radius: 7px;
@@ -302,105 +236,11 @@ header nav a.apply:hover {
 	font-weight: 700;
 }
 
-#hero .midlogo {
-	margin: 1.0em 0 0 0;
-/*	background: url(../img/logowhx_.png) no-repeat 0 0; */
-/*	width: 329px;
-	height: 43px; */
-}	
-
-#hero .midlogo img {
-	max-width: 100%;
-	display: block;
+.hero .mailsg {
+	padding-top: 14px;
 }
 
-.thighlight1 {
-	font-size: 65px;
-	font-weight: 900;
-	line-height: 1em;
-	margin-bottom: 0.1em;
-}
-
-.thighlight2 {
-	font-size: 32px;
-	font-weight: 700;
-	line-height: 1em;
-	margin-bottom: 0.4em;
-}
-
-.thighlight3 {
-	font-size: 21px;
-	font-weight: 400;
-	
-}
-
-#subtitle {
-	margin: 0.8em 0;
-	padding: 0.4em 0 0.4em 0;
-	text-align: center;
-	font-weight: 400;
-	font-style: italic;
-	border-top: 1px solid rgba(255,255,255,0.6);
-	border-bottom: 1px solid rgba(255,255,255,0.6);
-}
-
-.applybtn {
-	margin: 2.0em 0 2.2em 0;
-
-	line-height: 28px;
-	font-size: 24px;
-	font-weight: 300;	
-}
-
-.attention {
-	font-size: 2.5em;
-	font-weight: normal;
-	line-height: 1em;
-	vertical-align:	bottom; 
-}
-
-.applytext {
-	margin: 1.0em 0 1.0em 0;
-	font-size: 56px;
-	color: #141414;
-	cursor: default;
-	text-shadow: 0px 0px 2px rgba(0,0,0, 0.4);
-}
-
-
-#facts.text {
-	font-size: 35px;
-	font-weight: 700;
-	line-height: 1.1em;
-	
-	padding: 0 1em 0 0;
-	margin-top: 1.0em;
-}
-
-.sub {
-	font-size: 28px;
-}
-
-.date {
-	color: #fff;
-	background: #007070;
-	padding: 0.1em 0.3em;
-	
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-ms-border-radius: 2px;
-	border-radius: 2px;
-	line-height: 2em;
-	
-	margin: 0.6em 0;
-}
-
-/* ** =newsletter signup ** */
-/* ** apply button ** */
-
-fieldset input.required,
-fieldset textarea.required,
-fieldset select.required {
+#hero fieldset input.required {
 	margin: 14px 0 0 0;
 	width: 68%;
 	display: inline;
@@ -424,14 +264,13 @@ fieldset select.required {
 	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
 }
 
-fieldset input.abutton,
-.applybtn a {
+#hero fieldset input.abutton {
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	color: #fff;
 	font-size: 18px;	
+	text-shadow: none;
 	text-shadow: 0 1px rgba(20,20,20,0.4);	
-	text-decoration: none;
 	position: relative;
 
 	width: 26%;
@@ -459,162 +298,22 @@ fieldset input.abutton,
 	transition: background-color 0.18s ease-in-out;	
 }
 
-.applybtn a {
-	font-size: 28px;
-	padding: 0.3em 1.6em;
-	border: 1px solid rgba(2, 115, 171, 0.7);
-	
-	-webkit-box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.6);
-	-moz-box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.6);
-	box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.6);
-	
-	background-color: #009de6;
-	background-image: -webkit-linear-gradient( top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) );
-	background-image: -moz-linear-gradient( top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) );
-	background-image: linear-gradient( top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) );
-	
-	-webkit-transition: background-color 0.18s ease-in-out;
-	-moz-transition: background-color 0.18s ease-in-out;
-	-o-transition: background-color 0.18s ease-in-out;
-	transition: background-color 0.18s ease-in-out;		
-}
-
-fieldset input.abutton:hover,
-fieldset input.abutton:focus,
-fieldset input.abutton:active {
+#hero fieldset input.abutton:hover {
 /*	background: #00cc00; */
 	background: #02e111;
 }
 
-.applybtn a:hover,
-.applybtn a:focus,
-.applybtn a:active {
-	background: #00a4f0;
-	-webkit-box-shadow: 0px 0px 22px rgba(255, 255, 255, 0.6);
-	-moz-box-shadow: 0px 0px 22px rgba(255, 255, 255, 0.6);
-	box-shadow: 0px 0px 22px rgba(255, 255, 255, 0.6);
-}
+#hero .midlogo {
+	margin: 1.8em 0 0 0;
+/*	background: url(../img/logowhx_.png) no-repeat 0 0; */
+/*	width: 329px;
+	height: 43px; */
+}	
 
-/* ** partnerships ** */
-
-.coop {
-	background: rgba(0,0,0,0.6);
-	padding: 1em 0;
-	text-align: center;	
-}
-
-/* ** sections ** */
-
-.headingcontent {
-	font-size: 28px;
-	text-align: center;
-	font-weight: 700;
-
-	border-bottom: 1px solid #141414;	
-	margin: 21px 0 10px 0;
-}
-
-.imgcontent {
-	margin-top: 42px;
-	margin-bottom: 18px;
-}
-
-.imgcontent img {
+#hero .midlogo img {
 	max-width: 100%;
-	
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-ms-border-radius: 2px;
-	border-radius: 2px;
-	
-	-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-	
+	display: block;
 }
-
-.content {
-	font-size: 16px;
-}
-
-.content a {
-	color: #069;
-	text-decoration: none;
-	font-weight: 700;
-	
-	padding: 2px;
-}
-
-.content a:hover,
-.content a:active {
-	background: #069;
-	color: #fff;
-	text-decoration: none;
-	font-weight: 700;
-	
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-ms-border-radius: 2px;
-	border-radius: 2px;
-}
-
-.content a.toplink {
-	font-size: 14px;
-}
-
-.content a.toplink:hover,
-.content a.toplink:active {
-	text-shadow: 0px 0px 2px rgba(0,0,0,0.8);
-	background: none;
-	color: #069;
-}
-
-
-/* ** fineprint, lists ** */
-
-.fineprint {
-	border-top: 1px solid #141414;
-	margin-top: 4em;
-	padding-top: 0.5em;
-	font-size: 0.8em;
-	color: #141414;
-	
-	line-height: 1em;
-}
-
-.fineprint a {
-	font-weight: 700;
-	text-decoration: none;
-	color: #141414;
-}
-
-.fineprint li {
-	line-height: 1em;
-	margin-bottom: 7px; 
-}
-
-.curriculum li {
-	line-height: 1em;
-	list-style-type: disc;
-	list-style-position: inside;
-}
-
-
-
-/* ** subsection ** */
-.subsection h3 {
-	font-weight: 700;
-	font-size: 20px;
-	
-	margin: 4px 0 4px 0;
-}
-
-/* !! todo !!
-.subsection h3:before {
-	add chevron
-} */
-
-
 
 /* ** main page **/
 
@@ -623,11 +322,83 @@ body.imprint {
 }
 
 #content {
-	background: #fff;
+	background: #f4f4f4;
 }
 
 .singlepage {
 	padding-bottom: 12%;
+}
+
+.esection {
+	background: #fff;
+	font-size: 1.1em;
+	margin: 35px 0 14px 0;	
+	padding: 0 28px;
+	padding-bottom: 14px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+	
+	-webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.esection li {
+	line-height: .8em;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.esection .highl {
+	font-weight: 700;
+}
+
+.esection p {
+	line-height: 1.4em;
+}
+
+.closer {
+	padding-bottom: 28px;
+}
+
+/* h2.eheading {
+/* 	**add icon **	
+	text-indent: 2em; */
+/*	font-size: 28px;
+	font-weight: 900;
+	color: #141414;
+} */
+
+h2.eheading {
+	font-size: 28px;
+	font-weight: 900;
+	color: #141414;
+	text-align: left;
+	padding: 14px 0 0 0;	
+}
+
+#coding .etext {
+	margin: 7px 0;
+	background: rgba(255,255,255,0.8);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+	
+}
+
+.eimag {
+	margin: 35px 0 14px 0;
+}
+
+.eimag img {
+	max-width: 100%;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
 }
 
 
@@ -686,7 +457,7 @@ body.imprint {
 
 .footer li {
 	display: inline;
-	margin-right: 18px;
+	margin-right: 28px;
 }
 
 .footer li a,
@@ -721,15 +492,11 @@ body.imprint {
 	height: 171px;
 }
 
-.twitter {
+.twitterc {
 	font-size: 28px;
-	font-weight: normal;
-	text-rendering:	optimizeLegibility;
-	-webkit-font-smoothing:	antialiased;
-	font-smoothing:	antialiased;
 }
 
-.twitter:hover {
+.twitterc:hover {
 	color: #00aced;
 }
 
