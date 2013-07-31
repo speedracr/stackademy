@@ -5,6 +5,14 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
+	<!-- ----------------------------------------------------------
+	
+
+
+
+
+	 ---------------------------------------------------------- -->
+
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
@@ -24,12 +32,13 @@
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css">	
 	<link rel="stylesheet" href="stylesheets/style.css">
 	
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
 
 	<!--[if IE]>
 	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Lato:400italic" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">	
+	<link href="http://fonts.googleapis.com/css?family=Lato:300italic" rel="stylesheet" type="text/css">		
 	<link href="http://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Lato:700italic" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet" type="text/css">
@@ -92,12 +101,11 @@
 					<h1 class="logo"><a href="index.html">Stackademy</a></h1>
 					<nav class="navigation">
 						<ul>
-							<!-- <li class="item"><a href="#">Home</a></li> -->
+							<!-- <li class="item"><a href="about.html">About us</a></li>	 -->					
 							<li class="item"><a href="faqs.html">FAQs</a></li>
 							<li class="item"><a class="anchorLink" href="#contact">Contact</li></a>	
 							<li class="item omega"><a class="apply omega" href="apply.html">Apply</a></li>
 						</ul>															
-
 					</nav>
 				</div>
 			</header><!-- end container -->
@@ -123,18 +131,42 @@
 	</div>
 	
 
-	<!--<div class="band section coop">
+	<div class="band section coop">
 		<section class="container">
 			<div class="sixteen columns">	
 				<div class="companies">
-					<h3>We work with</h3>
+					<h3>work with leading services including</h3>
 				</div>
-				<div class="companylogos">
-					<img src="img/paymill.jpg" width="10" height="10" alt="paymill" />
+				<div class="logos">
+					<a href="https://paymill.com" target="_blank"><img class="companylogo" src="img/paymill.png" width="235" height="70" alt="paymill" /></a>
+					<a href="https://mailchimp.com" target="_blank"><img class="companylogo" src="img/mailchimp.png" width="256" height="70" alt="paymill" /></a>				
 				</div>
 			</div>
 		</section>
-	</div> -->
+	</div>
+	
+	
+	<div class="band section quote" id="">
+		<section class="container">
+			<div class="three columns alpha">
+				<img class="faces" src="img/sf.jpg"/ width="200px" height="200px">
+			</div>
+			<div class="thirteen columns omega">
+				<div id="sf" class="text quotation">
+					<p class="psmall">"The idea behind <span class="">Stackademy</span> is a really good one, <br />
+					and a perfect fit for Berlin at this point.</p>
+					<p class="psmall">If you have been looking for the right way to get started <br />
+					with learning to code, you might have just found your answer!"</p>
+				</div>
+				<div id="sftitle" class="quotesub">
+					<span class="lstrong">Sebastian Fallert</span><br />
+					Founder and Managing Director <a href="https://www.justbook.com/" target="_blank">JBM JustBook Mobile GmbH</a> (Berlin)
+				</div>
+			</div> <!-- end sixteen-->			
+		</section>
+	</div>	
+	
+	
 
 	<div class="band section list1" id="index">
 		<section class="container">
@@ -143,38 +175,18 @@
 					<span class="xstrong">12 weeks</span> of full-time <span class="xstrong">web application <br />
 					development</span> in <span class="xstrong">Berlin</span>, Germany. <br />
 					<span class="date">&middot; Sep. 23 - Dec. 13, 2013 &middot;</span><br />
-					<span class="sub">tuition: &euro;6,900 (incl. VAT)</span>
+					<!-- <span class="price2">tuition: &euro;7,500.-</span><br />
+					<span class="price2">introductory offer: - &euro; 700.-</span><br />  -->
+					<div id="pricingtable" class="table">
+						<p class="tuition">tuition <span class="price">&euro; 7,500.-</span></p>
+						<p class="tuition rebate">introductory rebate <span class="price" id="lastitem">- &euro; 700.-</span></p>
+						<p class="tuition sum"><span class="totalcomment">(incl. 19% VAT)</span><span class="total">&euro; 6,800.-</span> </p>
+					</div>
+					<div class="submini">See our <a href="faqs.html">FAQs</a> for details and payment plans.</div>
 				</div>
-			</div> <!-- end ten -->			
+			</div> <!-- end sixteen -->			
 		</section>
 	</div>
-	
-	
-	<div class="band section newsl">
-		<section class="container">
-			<div class="sixteen columns newslettersignup">
-				<div class="centered" id="newsl">
-					<p class="cta">Enter your email address to receive news, tips and updates from us.</p>
-						<!-- Begin MailChimp Signup Form -->
-						<fieldset class="newsletter">
-							<div id="mc_embed_signup">
-								<form action="http://stackademy.us4.list-manage.com/subscribe/post?u=eb73bde3996374533e101ff3c&amp;id=d406f69d8b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-								<div class="mc-field-group">
-									<input class="required email" type="email" placeholder="Email address" value="" name="EMAIL" id="mce-EMAIL">
-									<input class="abutton" type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe">					
-								</div>
-								<div id="mce-responses" class="clear">
-										<div class="response" id="mce-error-response" style="display:none"></div>
-										<div class="response" id="mce-success-response" style="display:none"></div>
-								</div>	
-								</form>
-							</div>
-						</fieldset>	
-						<!--End mc_embed_signup-->
-				</div> <!-- end centered -->	
-			</div> <!-- end sixteen -->
-		</section>
-	</div>	
 
 
 	<div class="band section content" id="builder">
@@ -204,15 +216,16 @@
 					To ensure that all participants are set for the course, you will work through <strong>prep material</strong> we supply once you are accepted to the course.</p>
 					<p>Classes are taught from start to finish by our <strong>lead instructor Matt Patterson</strong>, who brings a wealth of experience in Ruby and Ruby on Rails as well as
 					front-end development and design to the course - so you can be sure to get the most out of the program.</p>
-					<!-- <p><strong>This is what we teach:</strong></p>
+					<p>We want you to hit the road running once you have successfully completed the course. If you're into details, <strong>here is the gist of what we teach:</strong></p>
 						<ul class="curriculum">
-							<li>topic</li>
-							<li>topic</li>
-							<li>topic</li>
-							<li>topic</li>														
-							<li>topic</li>
-							<li>topic</li>							
-						</ul> -->
+							<li>Ruby, and the Sinatra and Ruby on Rails frameworks</li>
+							<li>Database foundations, PostgreSQL </li>
+							<li>Frontend design and development (HTML/CSS, JavaScript incl. AJAX, jQuery)</li>
+							<li>Active record, MVC</li>														
+							<li>Third-party services &amp; API integration, as well as authentication, security</li>
+							<li>Effective development: test-driven development, version control</li>	
+							<li>Deployment on cloud infrastructure</li>						
+						</ul>	
 				</div> <!-- end text -->
 				<div class="imgcontent">
 					<img src="img/datacenter.png" alt="Data center" />
@@ -260,11 +273,38 @@
 
 	<div class="band section" id="apply">
 		<section class="container">
-			<div class="sixteen columns">
+			<div class="sixteen columns borderbottom" id="redpill">
 				<div class="centered">
 					<p class="applytext pmarker">Take the red pill</p>
 					<p class="applybtn"><a href="apply.html" title="" target="">Apply now!</a></p>
 				</div> <!-- end centered -->
+			</div> <!-- end sixteen -->
+		</section>
+	</div>		
+
+	
+	<div class="band section newsl">
+		<section class="container">
+			<div class="sixteen columns newslettersignup">
+				<div class="centered" id="newsl">
+					<p class="cta">Enter your email address to receive news, tips and updates from us.</p>
+						<!-- Begin MailChimp Signup Form -->
+						<fieldset class="newsletter">
+							<div id="mc_embed_signup">
+								<form action="http://stackademy.us4.list-manage.com/subscribe/post?u=eb73bde3996374533e101ff3c&amp;id=d406f69d8b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								<div class="mc-field-group">
+									<input class="required email" type="email" placeholder="Email address" value="" name="EMAIL" id="mce-EMAIL">
+									<input class="abutton" type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe">					
+								</div>
+								<div id="mce-responses" class="clear">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>	
+								</form>
+							</div>
+						</fieldset>	
+						<!--End mc_embed_signup-->
+				</div> <!-- end centered -->	
 			</div> <!-- end sixteen -->
 		</section>
 	</div>		
