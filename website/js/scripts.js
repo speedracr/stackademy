@@ -33,3 +33,7 @@ jQuery.fn.anchorAnimate = function(settings) {
                 })
         })
 }
+
+function toggleDiv(divId) {
+   $("#"+divId).toggle('500',"linear");
+}

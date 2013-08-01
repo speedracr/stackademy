@@ -170,6 +170,10 @@ body {
 	text-align: right;
 }
 
+.smaller {
+	font-size: 14px;
+}
+
 .websymbols {
 	font-family: 'WebSymbolsRegular';
 }
@@ -188,6 +192,10 @@ body {
 
 .underline {
 	text-decoration: underline;
+}
+
+.hidden {
+	display: none;
 }
 
 /* ** =header ** */
@@ -929,8 +937,12 @@ body.imprint {
 h2.category {
 	font-weight: 900;
 	font-size: 21px;
-	color: #069;
+	color: #444;
 	text-transform: uppercase;
+	border-bottom: 2px solid #069;
+	line-height: 1.6em;
+	margin-bottom: 14px;
+	margin-top: 14px;
 }
 
 .faqentry h3.faqheading {
@@ -968,8 +980,24 @@ h2.category {
 	margin-bottom: 0.8em;
 }
 
+.aboutimg {
+	float: left;
+	/* padding: 2px; */
+	border: 1px solid rgba(0,0,0,0.2);
+	
+	margin: 0px 14px 14px 0px;
+}
+
 .signature {
 	margin-bottom: 3em;
+}
+
+body.about #story {
+	display: none;
+}
+
+body.about #aboutintro {
+	margin-bottom: 4em;
 }
 
 /* ** =footer ** */
