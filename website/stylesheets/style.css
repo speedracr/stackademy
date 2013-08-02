@@ -1000,6 +1000,12 @@ body.about #aboutintro {
 	margin-bottom: 4em;
 }
 
+/* ** intern ** */
+.announcement {
+	font-size: 21px;
+	line-height: 1.2em;
+}
+
 /* ** =footer ** */
 
 .footer {
