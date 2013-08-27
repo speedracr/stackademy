@@ -158,8 +158,8 @@ body {
 	text-align: center;
 }
 
-.alignright {
-	text-align: right;
+.left {
+	text-align: left;
 }
 
 .jus {
@@ -168,6 +168,10 @@ body {
 
 .right {
 	text-align: right;
+}
+
+.larger {
+	font-size: 20px;
 }
 
 .smaller {
@@ -336,6 +340,20 @@ header nav ul li.item a.apply:hover {
 	border-bottom: 1px solid #141414;
 }
 
+.hero-ios {
+	margin-top: 2em;
+	background: url(../img/background-ios_.jpg) no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 580px;
+	z-index: -1;
+	
+	border-bottom: 1px solid #141414;
+}
+
 .liner {
 	margin-top: 0em;
 	background: url(../img/linera.jpg) 0 -70px;
@@ -351,7 +369,7 @@ header nav ul li.item a.apply:hover {
 }
 
 .maintext {
-	margin: 6em 0 1em 0;
+	margin: 5em 0 1em 0;
 	padding: 28px;
 	background: rgba(0,0,0,0.6);
 	-webkit-border-radius: 7px;
@@ -401,6 +419,47 @@ header nav ul li.item a.apply:hover {
 	
 }
 
+.t400 {
+	font-weight: 400;
+	line-height: 1.1em;
+}
+
+
+.t700 {
+	font-weight: 700;
+	line-height: 1.1em;
+}
+
+#ttitle {
+	/* color: #e61e45; */
+	font-size: 42px;	
+	text-shadow: rgba(255,255,255,0.4) 0px 0px 8px;
+}
+
+#tdate {
+	font-size: 24px;
+	text-shadow: rgba(255,255,255,0.4) 0px 0px 8px;
+	margin-top: 0.2em;
+	margin-bottom: 1em;
+	
+	padding-bottom: 0.5em;
+	border-bottom: 3px solid #e61e45;
+}
+
+#tdate-ios {
+	font-size: 24px;
+	text-shadow: rgba(255,255,255,0.4) 0px 0px 8px;
+	margin-top: 0.2em;
+	margin-bottom: 1em;
+	
+	padding-bottom: 0.5em;
+	border-bottom: 3px solid #F6B729;
+}
+
+.tnormal {
+	font-size: 24px;
+}
+
 #subtitle {
 	margin: 0.8em 0;
 	padding: 0.4em 0 0.4em 0;
@@ -444,6 +503,19 @@ header nav ul li.item a.apply:hover {
 	margin-bottom: 1em;
 }
 
+#facts-ios.text {
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 1.1em;
+	
+	margin-top: 1.6em;
+	margin-bottom: 1em;
+}
+
+span.para {
+	margin-top: 37px;
+}
+
 figcaption.credit {
 	color: #fff;
 	position: relative;
@@ -474,7 +546,7 @@ figcaption.credit a {
 	line-height: 1em;
 	font-size: 14px;
 	font-weight: 400;
-	padding-top: 2px;
+	padding-top: 7px;
 	margin-top: 7px;
 }
 
@@ -488,6 +560,12 @@ figcaption.credit a {
 	font-family: 'EntypoW';
 	content: "7";
 	color: #555;
+}
+
+.addontext {
+	padding-top: 0.6em;
+	font-style: italic;
+	line-height: 1.4em;
 }
 
 .date {
@@ -563,6 +641,92 @@ p.tuition {
 	font-size: 18px;
 }
 
+/* ** social buttons ** */
+
+ul.socialbuttons {
+	text-align: center;
+}
+li.social {
+	display: inline;
+	font-size: 10px;
+}
+
+
+
+/* ** course promotion ** */
+
+.promo {
+	background: #eee;
+	padding: 1em 0;
+	text-align: center;
+}
+
+.border {
+	border-bottom: #141414 1px solid;
+	margin-bottom: 3em;
+}
+
+.course {
+	padding: 0.2em 0;
+	padding-bottom: 0.4em;
+	font-size: 22px;
+	line-height: 1.2em;
+}
+
+a.application {
+	color: #141414;
+	text-decoration: none;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;	
+}
+
+a.application:hover,
+a.application:active,
+a.application:focus {
+	color: #0CAF60;
+	border-bottom: 4px solid #0CAF60;
+	
+	/*
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px; */
+}
+
+.label {
+	font-weight: 700;
+	padding: 2px;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;	
+}
+
+.promolink {
+	color: #141414;
+	text-shadow: #141414 0px 0px 1px;
+	border-bottom: 4px solid #eee;
+	padding-left: 14px;
+}
+
+.none {
+	color: #141414;
+	border-bottom: 4px solid #eee;
+	padding-right: 14px;
+}
+
+.none2 {
+	color: #141414;
+	border-bottom: 4px solid #eee;
+	padding-left: 14px;
+}
+
+
+
 /* ** companies/ partners ** */
 
 .coop {
@@ -576,7 +740,6 @@ p.tuition {
 	color: #fff;
 	font-weight: 300;
 	font-size: 14px;
-	margin-top: 1em;
 }
 
 .logos {
@@ -800,6 +963,10 @@ fieldset input.abutton:active {
 	box-shadow: 0px 0px 22px rgba(255, 255, 255, 0.6);
 }
 
+.newsl-ios {
+	padding-bottom: 3em;
+}
+
 /* ** sections ** */
 
 .filler {
@@ -820,8 +987,19 @@ h2.eheading {
 
 .headingcontent {
 	font-size: 28px;
-	text-align: center;
+	/* update: center to left*/
+	text-align: left;
 	font-weight: 700;
+
+	border-bottom: 1px solid #141414;	
+	margin: 21px 0 10px 0;
+}
+
+.superheadingcontent {
+	font-size: 30px;
+	/* update: center to left*/
+	text-align: center;
+	font-weight: 900;
 
 	border-bottom: 1px solid #141414;	
 	margin: 21px 0 10px 0;
@@ -860,7 +1038,6 @@ img.aboutimg {
 	
 }
 
-
 .content {
 	font-size: 16px;
 }
@@ -898,6 +1075,49 @@ img.aboutimg {
 	color: #069;
 }
 
+/* **=partners partner ** */
+h3.part {
+	font-size: 18px;
+	border-bottom: 1px solid #141414;
+}
+
+.part a {
+	color: #444;
+}
+
+.partnercolumnright {
+	padding-right: 0.8em;
+}
+
+.partnercolumnleft {
+	padding-left: 0.8em;
+}
+
+.partnerentry {
+	line-height: 1.4em;
+	margin-top: 1.0em;
+}
+
+.partnerimg img {
+	margin: 0.6em 0;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;
+	
+}
+
+.partnerimg a:hover,
+.partnerimg a:focus,
+.partnerimg a:active {
+	background: none;
+}
+
+.imglink a {
+	padding: 0;
+	margin: 0;
+}
 
 /* ** fineprint, lists ** */
 
@@ -922,7 +1142,7 @@ img.aboutimg {
 	margin-bottom: 7px; 
 }
 
-.curriculum li {
+.licontent li {
 	line-height: 1em;
 	list-style-type: disc;
 	list-style-position: inside;
@@ -934,6 +1154,7 @@ img.aboutimg {
 	font-size: 20px;
 	
 	margin: 4px 0 4px 0;
+	margin-top: 1.0em;
 }
 
 /* !! todo !!
@@ -1008,7 +1229,6 @@ h2.category {
 
 
 /* ** =aboutus ** */
-
 .aboutheading {
 	font-size: 35px;
 	font-weight: normal;
