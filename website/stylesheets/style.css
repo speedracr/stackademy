@@ -1190,7 +1190,144 @@ body.imprint {
 	margin-left: 1.4em;
 }
 
+/* ** iOS ** */
+p.pheader {
+	font-size: 20px;
+}
+
+/* ** faq table ** */
+.csstable {
+	margin:0px;
+	padding:0px;
+	margin-bottom: 14px;
+	width:100%;
+	border:1px solid #666;
+	
+	-moz-border-radius-bottomleft:2px;
+	-webkit-border-bottom-left-radius:2px;
+	border-bottom-left-radius:2px;
+	
+	-moz-border-radius-bottomright:2px;
+	-webkit-border-bottom-right-radius:2px;
+	border-bottom-right-radius:2px;
+	
+	-moz-border-radius-topright:2px;
+	-webkit-border-top-right-radius:2px;
+	border-top-right-radius:2px;
+	
+	-moz-border-radius-topleft:2px;
+	-webkit-border-top-left-radius:2px;
+	border-top-left-radius:2px;
+}
+
+.csstable table {
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+
+.csstable tr:last-child td:last-child {
+	-moz-border-radius-bottomright:2px;
+	-webkit-border-bottom-right-radius:2px;
+	border-bottom-right-radius:2px;
+}
+
+.csstable table tr:first-child td:first-child {
+	-moz-border-radius-topleft:2px;
+	-webkit-border-top-left-radius:2px;
+	border-top-left-radius:2px;
+}
+
+.csstable table tr:first-child td:last-child {
+	-moz-border-radius-topright:2px;
+	-webkit-border-top-right-radius:2px;
+	border-top-right-radius:2px;
+}
+
+.csstable tr:last-child td:first-child {
+	-moz-border-radius-bottomleft:2px;
+	-webkit-border-bottom-left-radius:2px;
+	border-bottom-left-radius:2px;
+}
+
+.csstable tr:nth-child(odd){ 
+	background-color: rgba(2, 115, 171, 0.7); 
+	background-color: #fff; 	
+}
+.csstable tr:nth-child(even) { 
+	background-color: #fff; 
+}
+
+.csstable td {
+	vertical-align:middle;
+	
+	border:1px solid #666;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:15px;
+	font-weight: 400;
+	color:#141414;
+}
+
+.csstable tr:last-child td {
+	border-width:0px 1px 0px 0px;
+}
+
+.csstable tr td:last-child {
+	border-width:0px 0px 1px 0px;
+}
+
+.csstable tr:last-child td:last-child {
+	border-width:0px 0px 0px 0px;
+}
+
+.csstable tr:first-child td {
+	background-color:#E61E45;
+	border:0px solid #666;
+	text-align:left;
+	border-width:0px 0px 1px 1px;
+	font-size:16px;
+	font-weight: 700;
+	color:#ffffff;
+}
+
+.csstable tr:first-child td:first-child {
+	border-width:0px 0px 1px 0px;
+}
+.csstable tr:first-child td:last-child {
+	border-width:0px 0px 1px 1px;
+}
+
+#scholarship td {
+	font-size: 14px;
+}
+
+.csstable tr:hover {
+	background: #eee;
+}
+
+.csstable tr:hover td {
+	font-weight: 700;
+}
+
+.csstable td.net {
+	font-size: 13px;
+}
+
 /* ** =faqs ** */
+
+.subtext {
+	font-size: 14px;
+	line-height: 1.3em;
+	margin-bottom: 1.2em;
+}
+
+h3.tuitionhe {
+	font-size: 18px;
+	font-weight: 700;
+}
 
 h2.category {
 	font-weight: 900;
