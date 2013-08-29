@@ -112,6 +112,19 @@ li { line-height: 21px; margin-bottom: 14px; }
 }
 
 
+@font-face {
+	font-family: 'zocial';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/zocial/zocial-regular-webfont.eot');
+	src: url('../fonts/zocial/zocial-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/zocial/zocial-regular-webfont.woff') format('woff'),
+		url('../fonts/zocial/zocial-regular-webfont.ttf') format('truetype'),
+		url('../fonts/zocial/zocial-regular-webfont.svg#ZocialRegular') format('svg');
+	unicode-range: U+0-U+10FFFF;
+}
+
+
 
 /* #Site Styles
 ================================================== */
@@ -200,6 +213,27 @@ body {
 
 .hidden {
 	display: none;
+}
+
+a.button-dribbble,
+a.button-facebook,
+a.button-googleplus,
+a.button-linkedin,
+a.button-pinterest,
+a.button-rss,
+a.button-tumblr,
+a.button-twitter {
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	border-radius: .3em;
+	box-shadow: 0 1px 1px #999;
+	color: white;
+	display: inline-block;
+	font-size: 100%;
+	margin: 0 20px 20px 0;
+	padding: .65em 1em;
+	text-align: center;
+	width: 8em;
 }
 
 /* ** =header ** */
@@ -424,7 +458,6 @@ header nav ul li.item a.apply:hover {
 	line-height: 1.1em;
 }
 
-
 .t700 {
 	font-weight: 700;
 	line-height: 1.1em;
@@ -645,13 +678,46 @@ p.tuition {
 
 ul.socialbuttons {
 	text-align: center;
+	margin-top: 2.8em;	
+	margin-bottom: 14px;		
 }
+
 li.social {
 	display: inline;
-	font-size: 10px;
+	text-align: center;	
+	font-size: 14px;
+	padding: 20px 4px;
+	background: rgba(255,255,255,0.4);
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;
 }
 
+li:last-child.social {
+	margin-left: 5px;
+}
 
+li:first-child.social {
+	margin-right: 5px;
+}
+
+li.social a {
+	text-decoration: none;
+	color: #fff;
+}
+
+li.social a:hover,
+li.social a:focus,
+li.social a:active {
+	text-decoration: none;
+	color: #141414;
+}
+
+img.socialimg {
+	float: left;
+}
 
 /* ** course promotion ** */
 
@@ -1293,6 +1359,10 @@ p.pheader {
 	color:#ffffff;
 }
 
+.csstable tr:first-child td.net {
+	font-size:14px;
+}
+
 .csstable tr:first-child td:first-child {
 	border-width:0px 0px 1px 0px;
 }
@@ -1313,7 +1383,7 @@ p.pheader {
 }
 
 .csstable td.net {
-	font-size: 13px;
+	font-size: 12px;
 }
 
 /* ** =faqs ** */
