@@ -667,6 +667,10 @@ header nav ul li.item a.apply:hover {
 	margin-bottom: 1em;
 }
 
+#iosfacts {
+	margin-top: 2em;
+}
+
 span.para {
 	margin-top: 37px;
 }
@@ -739,6 +743,10 @@ figcaption.credit a {
 	margin: 1em 0;
 }
 
+.followup {
+	font-size: 24px;
+}
+
 .strikethrough {
   position: relative;
 }
@@ -798,18 +806,18 @@ p.tuition {
 
 /* ** social buttons ** */
 
-/*
+
 .socialbuttons {
-	text-align: center;
-	margin-top: 1em;
-	margin-bottom: -0.6em;
-	padding-top: 1em;
+
+	margin-top: 0.2em;
+	margin-bottom: 0.1em;
+	padding-top: 0.5em;
 	
 	border-top: 1px solid rgba(255,255,255,0.4);
 }
 .socialbuttons a {
 	text-decoration: none;
-} */
+}
 
 /* ** course promotion ** */
 
@@ -1260,7 +1268,7 @@ h3.part {
 
 .partnerimg img {
 	margin: 0.6em 0;
-	max-width: 100%;
+	width: 100%;
 	height: 39.25%;
 	
 	-webkit-border-radius: 2px;
