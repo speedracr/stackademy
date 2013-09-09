@@ -529,6 +529,65 @@ header nav ul li.item a.apply:hover {
 	border-bottom: 1px solid #141414;
 }
 
+.welcomemsg {
+	margin: 11em 0 1em 0;
+	padding: 14px;
+	width: 400px;
+	background: rgba(255,255,255,0.6);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;
+	
+	border-left: 8px solid #141414;
+	border-right: 8px solid #141414;		
+	
+	color: #141414;
+	line-height: 1.3em;
+	font-size: 32px;
+	font-weight: 700;
+	
+	text-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+	
+	/* Safari */
+	-webkit-transform: rotate(-6deg);
+	/* Firefox */
+	-moz-transform: rotate(-8deg);
+	/* IE */
+	-ms-transform: rotate(-8deg);
+	/* Opera */
+	-o-transform: rotate(-8deg);
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);	
+}
+
+.welcomemsg a {
+	text-decoration: none;
+	color: #141414;		
+}
+
+p.welcomeheader {
+	margin-bottom: 4px;
+}
+
+.welcomedate {
+	font-size: 24px;
+	padding-top: 0px;
+	margin: 0px 0 8px;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.4);	
+}
+
+.welcometitle {
+	color: #E61E45;
+	font-weight: 900;
+	font-size: 42px;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.4);	
+}
+
+.welcometitle:hover {
+	text-shadow: 0px 0px 14px rgba(230,30,69,0.6);
+}
+
 .maintext {
 	margin: 5em 0 1em 0;
 	padding: 28px;
