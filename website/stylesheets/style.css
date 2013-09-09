@@ -498,7 +498,7 @@ header nav ul li.item a.apply:hover {
 
 .hero-ios {
 	margin-top: 2em;
-	background: url(../img/background-ios_.jpg) no-repeat;
+	background: url(../img/backgr-iosb_.jpg) no-repeat;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -1453,7 +1453,7 @@ p.pheader {
 	border-width:0px 0px 0px 0px;
 }
 
-.csstable tr:first-child td {
+#fall13.csstable tr:first-child td {
 	background-color:#E61E45;
 	border:0px solid #666;
 	text-align:left;
@@ -1461,6 +1461,21 @@ p.pheader {
 	font-size:16px;
 	font-weight: 700;
 	color:#ffffff;
+}
+
+#winter14.csstable tr:first-child td {
+	background-color:#3B8FCD;
+	border:0px solid #666;
+	text-align:left;
+	border-width:0px 0px 1px 1px;
+	font-size:16px;
+	font-weight: 700;
+	color:#ffffff;
+}
+
+.csstable .tablemini {
+	font-size: 12px;
+	font-weight: 400;
 }
 
 .csstable tr:first-child td.net {
