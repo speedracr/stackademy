@@ -12,6 +12,7 @@ a Robocomobo website.
 * 6/20/2012
 */
 
+
 /*
 * This project uses pattern files from http://subtlepatterns.com/.
 * Subtle Patterns by Subtle Patterns 
@@ -1527,7 +1528,7 @@ p.pheader {
 	color:#ffffff;
 }
 
-#winter14.csstable tr:first-child td {
+#spring14.csstable tr:first-child td {
 	background-color:#3B8FCD;
 	border:0px solid #666;
 	text-align:left;
