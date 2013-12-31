@@ -197,6 +197,10 @@ body {
 	font-size: 14px;
 }
 
+.italic {
+	font-style: italic;
+}
+
 .websymbols {
 	font-family: 'WebSymbolsRegular';
 }
